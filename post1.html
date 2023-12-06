@@ -77,6 +77,7 @@
 
 			<!-- Begin Post Content -->
 			<div class="article-post">
+				<h3>Introducton</h3>
 				<p>
 					Embarking on the Cloud Resume Challenge has been an enlightening journey, fundamentally reshaping my approach to coding and cloud technologies. 
 					The fundamental concept of showcasing practical skills through tangible projects, as opposed to merely listing them on a resume, struck a chord with me. 
@@ -85,32 +86,55 @@
 				<blockquote>
 					Thanks Professor Lontok for this opportunity! This project has exposed me to many new skills I am now passionate about.
 				</blockquote>
+				<h3>S3</h3>
 				<p>
 					Beginning with S3, Amazon's Simple Storage Service, served as the cornerstone for hosting my resume in the cloud. 
-					The elegance and scalability of S3 provided a robust foundation for storing and retrieving data seamlessly. 
+					The elegance and scalability of S3 provided a robust foundation for storing and retrieving data seamlessly and quick. 
 					Its seamless integration with other AWS services streamlined the deployment process, emphasizing the crucial role of cloud storage in ensuring reliability 
 					and accessibility for end-users.
 				</p>
+				<h3>DynamoDB</h3>
 				<p>
-					 DynamoDB, AWS's NoSQL database service, introduced me to the realm of serverless computing. While configuring DynamoDB presented initial challenges, 
-					 its advantages in terms of flexibility and scalability were pivotal. The integration with Lambda functions added a dynamic layer to my resume, 
-					 enhancing user interactivity and experience.
+					 DynamoDB, AWS's NoSQL database service, introduced me to the realm of serverless computing. While configuring DynamoDB with Lambda presented initial challenges, 
+					 its advantages in terms of flexibility and scalability were pivotal. The integration with Lambda functions added a dynamic layer to my resume.
+					 Being on a single platform shows how times have changed. Managing these systems over the cloud is superior for almost all people because of
+					 its accesibility without sacificing integrity. Better yet, the cloud is a much cheaper alternative compared to on-prem.
 				</p>
+				<h3>Lambda API</h3>
 				<p>
-					Lambda, as a serverless computing service, revolutionized the interactivity of my resume by implementing functions in Python. 
-					The abstraction of infrastructure management underscored the efficiency gains inherent in serverless architectures. 
-					This shift in mindset highlighted the efficacy of focusing on code development rather than infrastructure intricacies.
+					Lambda, as a serverless computing service, enhanced the interactivity of my resume by implementing functions in Python. 
+					With the simple API I created for my website, I got a glimpse of the potential this service has. Its advantage of variable scalability, also
+					maximizes costs for users. Addtionally, being able to track logs through Amazon CloudFront made it much easier for me to troubleshoot.
+					I became intrigued with Lambda, and I wish to continue experimenting with it in the future.
 				</p>
+				<h3>Route53</h3>
 				<p>
 					Route53, Amazon's scalable Domain Name System (DNS) web service, played a crucial role in mapping my custom domain to the AWS resources hosting my resume. 
-					Navigating Route53's configuration required meticulous attention to detail, emphasizing its importance in ensuring secure and accessible deployment over the internet.	
+					Navigating Route53's configuration required meticulous attention to detail, emphasizing its importance in ensuring secure and accessible deployment over the internet.
+					After configurng Route53, I realized how much work must be done in the backend in order for users/clients to not run into any issues. 
 				</p>
+				<h3>Challenges</h3>
 				<p>
 					The challenges encountered throughout this undertaking were instrumental in deepening my understanding of AWS services' intricate interdependencies. 
-					Configuring permissions and security measures, particularly within Identity and Access Management (IAM), demanded a nuanced approach to uphold 
-					data confidentiality and integrity. Synchronizing code changes with version control on GitHub, 
-					coupled with the implementation of continuous integration and delivery using GitHub Actions and Terraform, introduced layers of complexity that ultimately 
-					proved to be both challenging and enlightening.	
+					Configuring permissions and security measures demanded a nuanced approach to uphold data confidentiality and integrity. The many configurations needed
+					great amounts of attention to details. I found my most common errors working on this challenge were configurations, making sure I go through a mental checklist
+					of tasks to avoid future problems.
+				</p>
+				<p>
+					One contingency that I, fortunately, avoided is cost and usage tracking. For this website, the resources used fall within the free-tier of the project. However, I can 
+					see how cloud engineers would need to be diligent when analysing resource usage. From what I have experienced using AWS, it is very easy to accidentally lose track of
+					what services are consuming resources. It is critical to keep track of these resources to avoid very costly mistakes.
+				</p>
+				<blockquote>
+					Professor Lontok told a story about how a previous colleague noticed that all their data was stored on the cloud and decided to download it locally for integrity.
+					Although their intentions were good, reading large amounts of data from the cloud is costly. After hearing about his experience, I am now extra careful in tracking
+					resource usage (and also the importance of IAM users for minimum access controls).
+				</blockquote>
+				<h3>Key Takeaways</h3>
+				<p>
+					I now have a good understanding on why companies need engineers entirely responsible for managing cloud infrastructure. With so many options, one small misconfiguration
+					can be costly for companies. I also have a much greater respect for logging and labeling. While the cloud resume challenge was very small in scale, I can see how organization
+					is key for future troubleshooting and management.
 				</p>
 				<p>
 					In conclusion, the Cloud Resume Challenge has not only fortified my technical skills in full-stack development and cloud computing 
